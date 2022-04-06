@@ -12,6 +12,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {color: #101828;}
 
+h1 {font-size: 3em;}
+h2 {font-size: 2.25em;}
+h3 {font-size: 1.25em;}
+h4 {font-size: 1.125em;}
+
 span {color: #8E2424;}
 
 p {color: #667085;}
@@ -65,7 +70,6 @@ nav li a {
 }
 
 .logo {
-	margin-left: 112px;
 	float: left;
 }
 
@@ -75,7 +79,6 @@ nav li a {
 }
 
 .botoes {
-	margin-right: 112px;
 	float: right;
 }
 
@@ -83,7 +86,8 @@ nav li a {
 /* header */
 
 .sobre {
-	margin-top: 96px;
+	margin: 96px 0;
+
 }
 
 .sobre span {
@@ -94,7 +98,6 @@ nav li a {
 }
 
 .sobre h1 {
-	font-size: 3em;
 	font-weight: 600;
 	margin-top: 24px;
 }
@@ -104,4 +107,27 @@ nav li a {
 	font-size: 1.25em;
 	width: 791px;
 	margin: 36px auto 0 auto;
+}
+
+
+/* metricas */
+
+.metricas {
+	display: flex;
+	column-gap: 2rem;
+}
+
+.metricas span {
+	font-size: 3.75em;
+	font-weight: 600;
+}
+
+.metricas p {
+	font-size: 1em;
+}
+
+.metricas div {
+	display: block;
+	flex: 1;
+	text-align: left;
 }
