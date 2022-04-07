@@ -1,8 +1,17 @@
+:root {
+	--maintitle-color: #8E2424;
+	--title-color: #101828;
+  	--text-color: #667085;
+  	--subtext-color: #8E2424;
+}
+
 /* geral */
 
 body {
 	font-family: "Inter", cursive;
 }
+
+main {margin: 0 7rem;}
 
 .cf:after {
 	content: '';
@@ -10,16 +19,16 @@ body {
 	clear: both;
 }
 
-h1, h2, h3, h4, h5, h6 {color: #101828;}
+h1, h2, h3, h4, h5, h6 {color: var(--title-color);}
 
 h1 {font-size: 3em;}
 h2 {font-size: 2.25em;}
 h3 {font-size: 1.25em;}
 h4 {font-size: 1.125em;}
 
-span {color: #8E2424;}
+span {color: var(--subtext-color);}
 
-p {color: #667085;}
+p {color: var(--text-color);}
 
 section{text-align: center;}
 
@@ -32,7 +41,7 @@ section{text-align: center;}
 }
 
 .logo h1 {
-	color: #3A404E;
+	color: var(--maintitle-color);
 	font-size: 1.12em; 
 	display: inline;
 	margin-left: 7px;
@@ -86,27 +95,27 @@ nav li a {
 /* header */
 
 .sobre {
-	margin: 96px 0;
+	margin: 6rem 0;
 
 }
 
 .sobre span {
 	font-size: 1em;
 	font-weight: 600;
-	margin-top: 96px;
+	margin-top: 6rem;
 	padding: 0;
 }
 
 .sobre h1 {
 	font-weight: 600;
-	margin-top: 24px;
+	margin-top: 1.5rem;
 }
 
 .sobre p {
 	
 	font-size: 1.25em;
-	width: 791px;
-	margin: 36px auto 0 auto;
+	width: 49.4375rem;
+	margin: 2.25rem auto 0 auto;
 }
 
 
@@ -130,4 +139,29 @@ nav li a {
 	display: block;
 	flex: 1;
 	text-align: left;
+}
+
+
+/* imagem */
+
+.imagem {
+	padding-top: 6.25rem;
+
+}
+
+.imagem span {
+	font-size: 0.875em;
+	font-weight: 500;
+	padding: 0.25rem 0.75rem;
+	background-color: rgba(142, 36, 36, 0.05);
+	border-radius: 1rem;
+}
+
+.imagem p {
+	font-size: 1.25em;
+}
+
+.imagem img {
+	max-width: 100%;
+	height: auto;
 }
