@@ -22,6 +22,7 @@ h1 {font-size: 3em;}
 h2 {font-size: 2.25em;}
 h3 {font-size: 1.25em;}
 h4 {font-size: 1.125em;}
+h5 {font-size: 1em;}
 
 span {color: var(--subtext-color);}
 
@@ -31,13 +32,15 @@ section{text-align: center;}
 
 /* navbar */
 
+nav img::after {
+	content: 'text';
+}
+
 nav {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
 }
-
-
 
 nav ul {
 	list-style: none;
@@ -62,16 +65,6 @@ nav li a {
 	background-color: var(--subtext-color);
 	border-radius: 0.5rem;
 	padding: 0.625rem 1.125rem;
-}
-
-
-.paginas {
-	display: inline-block;
-	/* margin-left: 7.4375rem; */
-}
-
-.botoes {
-	display: inline-block;
 }
 
 /* header */
@@ -177,3 +170,28 @@ nav li a {
 }
 
 .info span:last-child {margin-left: 1.5rem;}
+
+/* depoimento */
+
+.depoimento {
+	margin: 6rem auto;
+	padding: 4rem 0;
+	border-radius: 1rem;
+	background-color: rgba(195, 25, 25, 0.03);
+	max-width: 76rem;
+}
+
+.depoimento span {
+	font-size: 0.875em;
+	font-weight: 600;
+}
+
+.depoimento p {
+	margin-top: 0.25rem;
+	font-size: 0.875em;
+	font-weight: 400;
+}
+.depoimento h2, 
+.depoimento h5 {margin-top: 1rem;}
+
+.depoimento img {margin-top: 2rem;}
