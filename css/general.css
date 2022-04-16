@@ -245,3 +245,19 @@ footer button {
 }
 
 footer span {color: #98A2B3;}
+
+@media(max-device-width: 896px){
+	main {
+		margin: 0 0.75rem;
+	}
+
+	nav, nav ul, .botoes {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+
+	nav li {
+		margin-bottom: 0.625rem;
+	}
+}
